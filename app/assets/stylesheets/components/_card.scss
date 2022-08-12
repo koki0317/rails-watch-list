@@ -1,11 +1,9 @@
 .cards {
-  display: flex;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
   margin-top: 30px;
 }
-
 .card-category {
   background-size: cover;
   background-position: center;
@@ -52,4 +50,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 16px;
+}
+
+.card img {
+  height: 180px;
 }
