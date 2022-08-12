@@ -6,7 +6,7 @@
   <div class="cards">
     <% @lists.each do |list| %>
       <div class="card" style="width: 18rem;">
-        <%= image_tag 'ghibli.png' %>
+        <%= cl_image_tag list.photo.key %>
         <div class="card-category">
           <h5 class="card-title"><%= link_to list.name, list_path(list) %></h5>
         </div>
