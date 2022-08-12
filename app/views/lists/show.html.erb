@@ -5,12 +5,13 @@
   </div>
 </div>
 <div class="container">
+  <div class="card-container">
   <div class="cards-show">
   <% @list.bookmarks.each do |bookmark| %>
     <div class="card mb-3">
     <div class="row g-0 align-items-end h-100">
       <div class="col-md-4">
-        <img src=<%= bookmark.movie.poster_url %> class="img-fluid rounded-start h-100" alt="">
+        <img src=<%= bookmark.movie.poster_url %> class="show-image" alt="">
       </div>
       <div class="col-md-8">
         <div class="card-body">
@@ -23,6 +24,6 @@
     </div>
 </div>
   <% end %>
+  </div>
 </div>
-  <div><%= link_to "Home", lists_path, class: "btn btn-primary" %></div>
 </div>

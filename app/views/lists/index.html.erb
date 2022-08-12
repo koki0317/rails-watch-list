@@ -5,16 +5,18 @@
   </div>
 </div>
   <div class="container">
+  <div class="card-container">
   <div class="cards">
     <% @lists.each do |list| %>
         <div class="card" style="width: 18rem;">
         <% if list.photo.attached? %>
-          <%= cl_image_tag list.photo.key %>
+          <%= cl_image_tag list.photo.key, width: 286, height: 180 %>
         <% end %>
           <div class="card-category">
             <h5 class="card-title"><%= link_to list.name, list_path(list) %></h5>
           </div>
         </div>
       <% end %>
+  </div>
   </div>
 </div>
