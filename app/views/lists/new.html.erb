@@ -4,6 +4,7 @@
     <%= simple_form_for @list do |f| %>
     <div class="bookmark-form">
       <%= f.input :name %>
+      <%= f.input :photo, as: :file %>
       <%= f.submit 'submit', class: 'btn btn-primary' %>
     </div>
       <div><%= link_to "Home", lists_path, class: "btn btn-primary mt-5" %></div>
