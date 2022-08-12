@@ -1,0 +1,11 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://cinemore.jp/images/9fc88df644534a966a8203d55a50952aa1ed834498802429892d1dfa981a04a4.jpg);">
+    <h1>Create your bookmark!</h1>
+    <%= simple_form_for [@list, @bookmark] do |f| %>
+    <div class="bookmark-form">
+    <%= f.association :movie %>
+    <%= f.input :comment %>
+    <%= f.submit 'submit', class: 'btn btn-primary' %>
+    </div>
+    <div><%= link_to "Home", lists_path, class: "btn btn-primary mt-5" %></div>
+  <% end %>
+</div>

@@ -1,0 +1,56 @@
+.cards {
+  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  margin-top: 30px;
+}
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-title a {
+  text-decoration: none;
+  font-size: 26px;
+}
+
+.add-bookmark {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  background-image: url("spectrum-gradient.png");
+  padding: 10px 25px;
+  background-size: cover;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 130px;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.btn-danger {
+  color:white;
+  margin: 10px 0px;
+}
+
+.cards-show {
+  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}

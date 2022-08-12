@@ -1,0 +1,16 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://cinemore.jp/images/9fc88df644534a966a8203d55a50952aa1ed834498802429892d1dfa981a04a4.jpg);">
+    <h1>Your best movies</h1>
+    <%= link_to "Create a new list", new_list_path, class: "button" %>
+</div>
+  <div class="container">
+  <div class="cards">
+    <% @lists.each do |list| %>
+      <div class="card" style="width: 18rem;">
+        <%= image_tag 'ghibli.png' %>
+        <div class="card-category">
+          <h5 class="card-title"><%= link_to list.name, list_path(list) %></h5>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
